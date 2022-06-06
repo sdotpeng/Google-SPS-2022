@@ -1,9 +1,26 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
 }
 
 #greeting-container {
-  margin-top: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 10px 10px;
 }
