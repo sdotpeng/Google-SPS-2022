@@ -24,11 +24,9 @@ public class FormHandlerServlet extends HttpServlet {
     // Print the value so you can see it in the server logs.
     System.out.println("You submitted: ");
 
+    response.getWriter().println(firstName + lastName + email + formType + message);
+
     // Write the value to the response so the user can see it.
-    response.getWriter().println("You submitted this: ");
-
-    // Redirect to another site
-
-    response.sendRedirect("/");
+    response.getWriter().println("Contact form sent! Expect to hear back within one week :)");
   }
 }
