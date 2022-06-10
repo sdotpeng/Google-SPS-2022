@@ -101,7 +101,7 @@
         <h3 align="center">
             Contact Me!
         </h3>
-        <form action='/form-handler'>
+        <form action='/form-handler' method="POST">
             <fieldset>
                 <label>Enter Your First Name:
                     <input type="text" name="first-name" required />
@@ -114,8 +114,8 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label><input type="radio" name="form-type" class="inline" /> I'm a recruiter</label>
-                <label><input type="radio" name="form-type" class="inline" /> Feedback for portfolio</label>
+                <label><input type="radio" name="form-type" id="recruiter" class="inline" /> I'm a recruiter</label>
+                <label><input type="radio" name="form-type" id="feedback" class="inline" /> Feedback for portfolio</label>
             </fieldset>
             <fieldset>
                 <label>Leave a message::
