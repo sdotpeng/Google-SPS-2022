@@ -22,6 +22,5 @@ public class FormHandlerServlet extends HttpServlet {
     response.getWriter().println("You submitted this: " + textValue);
     
     // Redirect to another site
-    // response.sendRedirect("https://google.com");
   }
 }
