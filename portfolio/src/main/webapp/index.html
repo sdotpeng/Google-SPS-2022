@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+        <h1>My SPS Portfolio</h1>
     </div>
-  </body>
+
+    <!-- Introduction -->
+    <div id="content">
+        <h3 align="center">Hello!</h3>
+        <p align="center">My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I started programming in Pascal during middle school, I have found my passion in building and tinkering things with various technologies. I have been doing Eye Tracking in Programming and Biometrics research for the past two years, and I have some professional experience in Product Management and User Experience design. Recently in Google SPS, I started to learn web programming in Java. It is something that I always wanted to learn, and I want to master it in this summer.</p>
+        <div class="card">
+            <img src="images/profile.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Siyuan (Ricky) Peng</b></h4>
+                <p>
+                    <a href='https://github.com/sdotpeng/'>GitHub<a/>  | 
+                    <a href='https://www.linkedin.com/in/siyuanrickypeng/'>LinkedIn<a/>  |  
+                    <a href='https://leetcode.com/sdotpeng/'>LeetCode<a/>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="content">
+        <h3 align="center">Projects</h3>
+        <div class="card">
+            <img src="images/JavaIDE.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Java-based IDE</b></h4>
+                <p>
+                    A Java based IDE that supports code formatting, standard console I/O, keywords highlighting, syntax checking, find & replace. Built compiler that integrats scanner, parser, semantic analyzer, and compiler. Developed collaborately using Git, and practiced MVC and OOP design.
+                </p>
+                <p>Java | JavaFX</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/DiningAPI.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Colby College Dining Bot</b></h4>
+                <p>
+                    A Python based web server that fetches Colby College dining hall menu and sends to users automatically at customizable time. Deployed on Heroku.
+                </p>
+                <p>Python | Flask | Heroku | iOS Shortcuts | Shortcut.js</p>
+            </div>
+        </div> 
+        <div class="card">
+            <img src="images/EMIB.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Eye Movement in Biometrics</b></h4>
+                <p>
+                    Eye movement based authentication with cognitive and linguistic features, improved accuracy from 60% to 73% in the current field.
+                </p>
+                <p>Python | Google Cloud Platform | Open-CV | Scikit-learn | Pandas</p>
+            </div>
+        </div> 
+    </div>
+
+    <div id="content">
+        <h3 align="center">My GitHub Stats</h3>
+        <p align="center">
+            <img align="center"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdotpeng&hide=AGS%20Script,Jupyter%20Notebook&layout=compact&theme=vue&langs_count=9" />
+        </p>
+    </div>
+
+    <form action="/form-handler" method="POST">
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
+
+    <div id="content">
+        <p>Click here to get a random fact about me:</p>
+        <button onclick="addRandomGreeting()">Click me :)</button>
+        <div id="greeting-container"></div>
+    </div>
+</body>
+
 </html>
