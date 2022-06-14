@@ -29,9 +29,10 @@ public class FormHandlerServlet extends HttpServlet {
         sb.append("Email: " + email + "\n");
         sb.append("Message: " + message);
 
+        // Store in log
         System.out.println(sb.toString());
 
         // Write the value to the response so the user can see it.
-        response.getWriter().println("Contact form sent! Expect to hear back within one week :)");
+        response.getWriter().println("Nice to hear from you, " + firstName + "! Your contact form has been sent! I will get back to your account at " + email + " within one week. Thank you!");
     }
 }
