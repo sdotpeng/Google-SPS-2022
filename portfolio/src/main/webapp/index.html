@@ -9,63 +9,81 @@
 </head>
 
 <body>
-    <div id="content">
+    <div class="content">
         <h1>My SPS Portfolio</h1>
     </div>
 
     <!-- Introduction -->
-    <div id="content">
+    <div class="content">
         <h3 align="center">Hello!</h3>
-        <p align="center">My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I started programming in Pascal during middle school, I have found my passion in building and tinkering things with various technologies. I have been doing Eye Tracking in Programming and Biometrics research for the past two years, and I have some professional experience in Product Management and User Experience design. Recently in Google SPS, I started to learn web programming in Java. It is something that I always wanted to learn, and I want to master it in this summer.</p>
-        <div class="card">
+        <p align="center">My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I
+            am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I
+            started programming in Pascal during middle school, I have found my passion in building and tinkering things
+            with various technologies. I have been doing Eye Tracking in Programming and Biometrics research for the
+            past two years, and I have some professional experience in Product Management and User Experience design.
+            Recently in Google SPS, I started to learn web programming in Java. It is something that I always wanted to
+            learn, and I want to master it in this summer.</p>
+        <div class="card introduction-card">
             <img src="images/profile.png" alt="Avatar" style="width:100%">
             <div class="container">
                 <h4><b>Siyuan (Ricky) Peng</b></h4>
                 <p>
-                    <a href='https://github.com/sdotpeng/'>GitHub<a/>  | 
-                    <a href='https://www.linkedin.com/in/siyuanrickypeng/'>LinkedIn<a/>  |  
-                    <a href='https://leetcode.com/sdotpeng/'>LeetCode<a/>
+                    <a href='https://github.com/sdotpeng/'>GitHub<a /> |
+                        <a href='https://www.linkedin.com/in/siyuanrickypeng/'>LinkedIn<a /> |
+                            <a href='https://leetcode.com/sdotpeng/'>LeetCode<a />
                 </p>
             </div>
         </div>
     </div>
 
     <!-- Projects -->
-    <div id="content">
-        <h3 align="center">Projects</h3>
-        <div class="card">
-            <img src="images/JavaIDE.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>Java-based IDE</b></h4>
-                <p>
-                    A Java based IDE that supports code formatting, standard console I/O, keywords highlighting, syntax checking, find & replace. Built compiler that integrats scanner, parser, semantic analyzer, and compiler. Developed collaborately using Git, and practiced MVC and OOP design.
-                </p>
-                <p>Java | JavaFX</p>
+    <h3 align="center">Projects</h3>
+    <div class="flex-parent-element">
+        <div class="flex-child-element">
+            <div class="card">
+                <img src="images/JavaIDE.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Java-based IDE</b></h4>
+                    <p>
+                        A Java based IDE that supports code formatting, standard console I/O, keywords highlighting,
+                        syntax
+                        checking, find & replace. Built compiler that integrats scanner, parser, semantic analyzer, and
+                        compiler. Developed collaborately using Git, and practiced MVC and OOP design.
+                    </p>
+                    <p>Java | JavaFX</p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="images/DiningAPI.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>Colby College Dining Bot</b></h4>
-                <p>
-                    A Python based web server that fetches Colby College dining hall menu and sends to users automatically at customizable time. Deployed on Heroku.
-                </p>
-                <p>Python | Flask | Heroku | iOS Shortcuts | Shortcut.js</p>
+        <div class="flex-child-element">
+            <div class="card">
+                <img src="images/DiningAPI.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Colby College Dining Bot</b></h4>
+                    <p>
+                        A Python based web server that fetches Colby College dining hall menu and sends to users
+                        automatically at customizable time. Deployed on Heroku.
+                    </p>
+                    <p>Python | Flask | Heroku | iOS Shortcuts | Shortcut.js</p>
+                </div>
             </div>
-        </div> 
-        <div class="card">
-            <img src="images/EMIB.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>Eye Movement in Biometrics</b></h4>
-                <p>
-                    Eye movement based authentication with cognitive and linguistic features, improved accuracy from 60% to 73% in the current field.
-                </p>
-                <p>Python | Google Cloud Platform | Open-CV | Scikit-learn | Pandas</p>
+        </div>
+        <div class="flex-child-element">
+            <div class="card">
+                <img src="images/EMIB.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Eye Movement in Biometrics</b></h4>
+                    <p>
+                        Eye movement based authentication with cognitive and linguistic features, improved accuracy from
+                        60%
+                        to 73% in the current field.
+                    </p>
+                    <p>Python | Google Cloud Platform | Open-CV | Scikit-learn | Pandas</p>
+                </div>
             </div>
-        </div> 
+        </div>
     </div>
 
-    <div id="content">
+    <div class="content">
         <h3 align="center">My GitHub Stats</h3>
         <p align="center">
             <img align="center"
@@ -73,17 +91,40 @@
         </p>
     </div>
 
-    <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
-        <br/>
-        <input type="submit" />
-    </form>
-
-    <div id="content">
+    <div class="content">
         <p>Click here to get a random fact about me:</p>
         <button onclick="addRandomGreeting()">Click me :)</button>
         <div id="greeting-container"></div>
+    </div>
+
+    <div class="" content">
+        <h3 align="center">
+            Contact Me!
+        </h3>
+        <form action='/form-handler' method="POST">
+            <fieldset>
+                <label>Enter Your First Name:
+                    <input type="text" name="first-name" required />
+                </label>
+                <label>Enter Your Last Name:
+                    <input type="text" name="last-name" required />
+                </label>
+                <label>Enter Your Email:
+                    <input type="email" name="email" required />
+                </label>
+            </fieldset>
+            <fieldset>
+                <label><input type="radio" name="form-type" value="recruiter" class="inline" /> I'm a recruiter</label>
+                <label><input type="radio" name="form-type" value="feedback" class="inline" /> Feedback for
+                    portfolio</label>
+            </fieldset>
+            <fieldset>
+                <label>Leave a message::
+                    <textarea name="message" rows="3" cols="30" placeholder="We have a job opening at..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+        </form>
     </div>
 </body>
 
