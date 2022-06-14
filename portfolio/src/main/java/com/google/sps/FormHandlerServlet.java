@@ -34,5 +34,6 @@ public class FormHandlerServlet extends HttpServlet {
 
         // Write the value to the response so the user can see it.
         response.getWriter().println("Nice to hear from you, " + firstName + "! Your contact form has been sent! I will get back to your account at " + email + " within one week. Thank you!");
+        response.getWriter().println("<a href=\"/\">Back to home</a>");
     }
 }
