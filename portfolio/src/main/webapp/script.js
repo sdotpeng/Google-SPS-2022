@@ -50,7 +50,10 @@ function requestTranslation() {
       .then((translatedMessage) => {;
         translationContainer[i].innerText = translatedMessage;
       });
-  }
 
-  waitMessage.innerText = 'aa';
+    // if i == translationContainer.length - 1, then hide the wait message
+    if (i == translationContainer.length - 1) {
+      waitMessage.innerText = '';
+    }
+  }
 }
