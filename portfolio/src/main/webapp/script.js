@@ -26,3 +26,24 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+
+function requestTranslation() {
+  const aboutme = document.getElementById('aboutme').value;
+  const languageCode = document.getElementById('language').value;
+
+  const resultContainer = document.getElementById('translation');
+  resultContainer.innerText = 'Loading...';
+
+  const params = new URLSearchParams();
+  params.append('text', aboutme);
+  params.append('languageCode', languageCode);
+
+  fetch('/translate', {
+    method: 'POST',
+    body: params
+  }).then(response => response.text())
+  .then((translatedMessage) => {
+    resultContainer.innerText = translatedMessage;
+  });
+}
