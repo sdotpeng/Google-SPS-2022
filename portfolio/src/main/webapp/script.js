@@ -31,9 +31,6 @@ function addRandomGreeting() {
 function requestTranslation() {
   const languageCode = document.getElementById('language').value;
 
-  const waitMessage = document.getElementById('waitMessage');
-  waitMessage.innerText = 'Loading...';
-
   // build a loop for all element with classname "translation"
   const translationContainer = document.getElementsByClassName('requireTranslation');
   for (let i = 0; i < translationContainer.length; i++) {
@@ -50,10 +47,5 @@ function requestTranslation() {
       .then((translatedMessage) => {;
         translationContainer[i].innerText = translatedMessage;
       });
-
-    // if i == translationContainer.length - 1, then hide the wait message
-    if (i == translationContainer.length - 1) {
-      waitMessage.innerText = '';
-    }
   }
 }
