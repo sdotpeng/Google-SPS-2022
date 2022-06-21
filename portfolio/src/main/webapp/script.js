@@ -52,5 +52,5 @@ function requestTranslation() {
       });
   }
 
-  waitMessage.innerText = '';
+  waitMessage.innerText = 'aa';
 }
