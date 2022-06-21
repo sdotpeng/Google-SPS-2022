@@ -29,9 +29,7 @@ function addRandomGreeting() {
 
 
 function requestTranslation() {
-  const aboutme = "My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I started programming in Pascal during middle school, I have found my passion in building and tinkering things with various technologies. I have been doing Eye Tracking in Programming and Biometrics research for the past two years, and I have some professional experience in Product Management and User Experience design. Recently in Google SPS, I started to learn web programming in Java. It is something that I always wanted to learn, and I want to master it in this summer.";
   const languageCode = document.getElementById('language').value;
-  document.getElementsByClassName
 
   const waitMessage = document.getElementById('waitMessage');
   waitMessage.innerText = 'Loading...';

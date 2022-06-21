@@ -26,7 +26,7 @@
         </select>
         language:
         <button onclick="requestTranslation();">Translate This!</button>
-        <p id="waitMessage"></p>
+        <span id="waitMessage"></span>
     </p>
         <p class="requireTranslation" align="center">My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I
             am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I
@@ -132,23 +132,26 @@
         </h3>
         <form action='/form-handler' method="POST">
             <fieldset>
-                <label class="requireTranslation">Enter Your First Name:
+                <label>
+                    <span class="requireTranslation">Enter Your First Name:</span>
                     <input type="text" name="first-name" required />
                 </label>
-                <label class="requireTranslation">Enter Your Last Name:
+                <label>
+                    <span class="requireTranslation">Enter Your Last Name:</span>
                     <input type="text" name="last-name" required />
                 </label>
-                <label class="requireTranslation">Enter Your Email:
+                <label>
+                    <span class="requireTranslation">Enter Your Email:</span>
                     <input type="email" name="email" required />
                 </label>
             </fieldset>
             <fieldset>
-                <label class="requireTranslation"><input type="radio" name="form-type" value="recruiter" class="inline" /> I'm a recruiter</label>
-                <label class="requireTranslation"><input type="radio" name="form-type" value="feedback" class="inline" /> Feedback for
-                    portfolio</label>
+                <label><input type="radio" name="form-type" value="recruiter" class="inline" /> <span class="requireTranslation">'m a recruiter</span></label>
+                <label><input type="radio" name="form-type" value="feedback" class="inline" /> <span class="requireTranslation">Feedback for portfolio</span></label>
             </fieldset>
             <fieldset>
-                <label class="requireTranslation">Leave a message:
+                <label>
+                    <span class="requireTranslation">Leave a message:</span>
                     <textarea name="message" rows="3" cols="30" placeholder="We have a job opening at..."></textarea>
                 </label>
             </fieldset>
