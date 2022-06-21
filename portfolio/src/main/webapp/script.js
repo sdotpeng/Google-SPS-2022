@@ -31,20 +31,28 @@ function addRandomGreeting() {
 function requestTranslation() {
   const aboutme = "My name is Siyuan, and I also go by Ricky or Rickesh (got it from my south asian friends). I am a rising junior double majoring in Computer Science and Mathematics at Colby College, Maine. Since I started programming in Pascal during middle school, I have found my passion in building and tinkering things with various technologies. I have been doing Eye Tracking in Programming and Biometrics research for the past two years, and I have some professional experience in Product Management and User Experience design. Recently in Google SPS, I started to learn web programming in Java. It is something that I always wanted to learn, and I want to master it in this summer.";
   const languageCode = document.getElementById('language').value;
+  document.getElementsByClassName
 
-  const resultContainer = document.getElementById('translation');
-  resultContainer.innerText = 'Loading...';
+  const waitMessage = document.getElementById('waitMessage');
+  waitMessage.innerText = 'Loading...';
 
+  // build a loop for all element with classname "translation"
+  const translationContainer = document.getElementsByClassName('requireTranslation');
+  for (let i = 0; i < translationContainer.length; i++) {
+    originalText = translationContainer[i].innerText;
 
-  const params = new URLSearchParams();
-  params.append('text', aboutme);
-  params.append('languageCode', languageCode);
+    const params = new URLSearchParams();
+    params.append('originalText', originalText);
+    params.append('languageCode', languageCode);
 
-  fetch('/translate', {
-    method: 'POST',
-    body: params
-  }).then(response => response.text())
-    .then((translatedMessage) => {
-      resultContainer.innerText = translatedMessage;
-    });
+    fetch('/translate', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+      .then((translatedMessage) => {;
+        translationContainer[i].innerText = translatedMessage;
+      });
+  }
+
+  waitMessage.innerText = '';
 }
